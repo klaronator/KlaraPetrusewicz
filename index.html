@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.7/lib/addons/p5.sound.min.js"></script>
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+  </head>
+  <body>
+    <main></main>
+
+    <!-- Firebase config and initialization -->
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAivQ93eA06kw_UayW9oyEtUmJzqslUZB4",
+        authDomain: "gswm-c70f0.firebaseapp.com",
+        databaseURL: "https://gswm-c70f0-default-rtdb.europe-west1.firebasedatabase.app/",  // added this
+        projectId: "gswm-c70f0",
+        storageBucket: "gswm-c70f0.firebasestorage.app",
+        messagingSenderId: "768190623798",
+        appId: "1:768190623798:web:d29516394ede0c5d2f2897"
+      };
+
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const database = firebase.database();
+    </script>
+
+    <!-- Klara's p5.js code -->
+    <script src="makeup.js"></script>
+  </body>
+</html>
+
